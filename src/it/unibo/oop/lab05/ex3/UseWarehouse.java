@@ -10,28 +10,27 @@ public final class UseWarehouse {
     }
 
     /**
-     * @param args
-     *            unused
+     * @param args unused
      */
     public static void main(final String[] args) {
         /*
          * Realize the classes:
          * 
-         * 1) WarehouseImpl implements Warehouse. Such class should use
-         * internally a java.util.LinkedHashSet.
+         * 1) WarehouseImpl implements Warehouse. Such class should use internally a
+         * java.util.LinkedHashSet.
          * 
-         * 2) ProductImpl implements Product. Remember that two products are the
-         * same if their name is the same.
+         * 2) ProductImpl implements Product. Remember that two products are the same if
+         * their name is the same.
          * 
-         * Read VERY carefully the comments in the implemented interfaces and use
-         * them to run the test.
+         * Read VERY carefully the comments in the implemented interfaces and use them
+         * to run the test.
          */
 
-        final Product p1 = null;
-        final Product p2 = null;
-        final Product p3 = null;
+        final Product p1 = new ProductImpl("mela", 1);
+        final Product p2 = new ProductImpl("pera", 13);
+        final Product p3 = new ProductImpl("ciabatte", 3);
 
-        final Warehouse w = null;
+        final Warehouse w = new WarehouseImpl();
         w.addProduct(p3);
         w.addProduct(p1);
         w.addProduct(p2);
