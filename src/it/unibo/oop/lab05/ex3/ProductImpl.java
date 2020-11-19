@@ -18,9 +18,9 @@ public class ProductImpl implements Product {
         return quantity;
     }
 
-//    public String toString() {
-//        return "[name=" + name + ", quantity=" + quantity + "]";
-//    }
+    public String toString() {
+        return "[name=" + name + ", quantity=" + quantity + "]";
+    }
 
     
     public int hashCode() {
